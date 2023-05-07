@@ -16,7 +16,6 @@ if (isset($_POST['submit'])) {
 
     if ($result) {
         header("Location: reservations.php?msg=New reservation has been created successfully");
-        //echo '<script>alert("Your reservation has been sent successfully!"); window.location.href = "reservations.php";</script>';
     } else {
         echo "Failed: " . mysqli_error($conn);
     }

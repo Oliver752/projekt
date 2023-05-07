@@ -40,7 +40,7 @@ include_once "parts/header.php";
 		<br>Best Winery<br>200 Provence-Alpes,&nbsp;France</p>
 						</div><div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 							<div class="form-wrapper clearfix">
-                                <form action="add.php" method="post">
+                                <form action="crud/add.php" method="post">
                                     <div class="form-group">
                                         <label for="name">Name:</label>
                                         <input type="text" id="name" name="name" class="form-control" required>

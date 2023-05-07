@@ -12,7 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-            background-image: url("img/feher.png");
+            background-image: url("../img/taste.png");
             background-size: cover;
             background-position: center;
         }
@@ -44,7 +44,9 @@ body {
     </style>
 </head>
 <body>
-
+<br><br>
+<h1 class="text-white text-center">Reservation overview</h1>
+<br><br>
 <div class="container">
     <?php
     if(isset($_GET['msg'])){
@@ -56,9 +58,9 @@ body {
     }
     ?>
 
-    <a href="taste.php" class="btn btn-dark mb-3"> Add new </a>
+    <a href="reservation_form.php" class="btn btn-dark mb-3"> Add new </a>
     <table class="table table-hover text-center">
-        <thead class="table-dark">
+        <thead class="table-light">
         <tr>
             <th scope="col">ID</th>
             <th scope="col">Name</th>
@@ -68,7 +70,7 @@ body {
             <th scope="col">Action</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody class="table-light">
         <?php
         include "db_conn.php";
         $sql = "SELECT * FROM `taste_signup`";
@@ -83,8 +85,8 @@ body {
                      <td><?php echo $row ['date'] ?></td>
 
                     <td>
-                        <a href="edittaste.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
-                        <a href="deletetaste.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
+                        <a href="edit_reservation.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-pen-to-square fs-5 me-3"></i></a>
+                        <a href="delete_reservation.php?id=<?php echo $row['id'] ?>" class="link-dark"><i class="fa-solid fa-trash fs-5"></i></a>
                     </td>
                 </tr>
             <?php

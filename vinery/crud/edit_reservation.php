@@ -1,3 +1,38 @@
+<?php
+include "db_conn.php";
+
+if (isset($_GET['id'])) {
+    $id = intval($_GET['id']);
+} else {
+    $sql = "SELECT id FROM `taste_signup` ORDER BY id DESC LIMIT 1";
+    $result = mysqli_query($conn, $sql);
+    $row = mysqli_fetch_assoc($result);
+    $id = $row['id'];
+}
+
+
+if (isset($_POST['submit'])) {
+    $id = $_POST['id'];
+    $reservationname = $_POST['reservationname'];
+    $reservationemail = $_POST['reservationemail'];
+    $persons = $_POST['persons'];
+    $timedate = $_POST['timedate'];
+
+    $sql = "UPDATE `taste_signup` SET `name`='$reservationname',`email`='$reservationemail',`count`='$persons',`date`='$timedate' WHERE id = '$id'";
+    echo "SQL Query: " . $sql;
+    if (isset($conn)) {
+        $result = mysqli_query($conn, $sql);
+    }
+
+    if ($result) {
+        header("Location: reservations.php?msg=Data has been updated successfully");
+    } else {
+        echo "Failed: " . mysqli_error($conn);
+    }
+
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,7 +45,7 @@
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-image: url("img/taste.png");
+            background-image: url("../img/taste.png");
             background-size: cover;
             background-position: center;
         }
@@ -46,25 +81,33 @@
 <div class="container">
     <div class="row justify-content-center align-items-center">
         <div class="col-md-6">
-            <form class="form text-light" action="addtaste.php" method="post">
-                <h2 class="text-center mb-4">Wine Tasting Reservation</h2>
+            <form class="form text-light" action="edit_reservation.php" method="post">
+                <h2 class="text-center mb-4"><strong>Edit</strong> Your Reservation</h2>
+                <p class="text-center">Click update after changing any information</p>
+                <?php
+                $sql = "SELECT * FROM `taste_signup` WHERE id = $id";
+                $result = mysqli_query($conn, $sql);
+                $row = mysqli_fetch_assoc($result);
+                ?>
                 <div class="form-group">
                     <label for="name">Name:</label>
-                    <input type="text" class="form-control" id="reservationname" name="reservationname" required>
+                    <input type="text" class="form-control" id="reservationname" name="reservationname" value="<?php echo $row['name'] ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label>
-                    <input type="email" class="form-control" id="reservationemail" name="reservationemail" required>
+                    <input type="email" class="form-control" id="reservationemail" name="reservationemail" value="<?php echo $row['email'] ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="persons">Number of Persons:</label>
-                    <input type="number" class="form-control" id="persons" name="persons" required>
+                    <input type="number" class="form-control" id="persons" name="persons" value="<?php echo $row['count'] ?>" required>
                 </div>
                 <div class="form-group">
                     <label for="timedate">Date and Time:</label>
-                    <input type="datetime-local" class="form-control" id="timedate" name="timedate" required>
+                    <input type="datetime-local" class="form-control" id="timedate" name="timedate" value="<?php echo $row['date'] ?>" required>
                 </div>
-                <button type="submit" name="submit" class="btn btn-danger btn-block">Submit</button>
+                <input type="hidden" name = "id" value="<?php echo $row['id'];  ?>">
+
+                <button type="submit" name="submit" class="btn btn-danger btn-block">Update</button>
             </form>
         </div>
     </div>

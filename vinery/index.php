@@ -35,7 +35,7 @@ include_once "parts/header.php";
 							<h1 class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</h1>
 							<p class="lead text-white">Excepteur sint occaecat cupidatat sunt culpa officia.</p>
 							<a target="_self" href="wines.php" class="btn btn-primary btn-white inner-link">Learn more</a>
-							<a href="taste.php" class="btn btn-primary btn-filled inner-link" target="_self">Sign up for tasting</a>
+							<a href="crud/reservation_form.php" class="btn btn-primary btn-filled inner-link" target="_self">Sign up for tasting</a>
 						</div>
 					</div>
 				</div>
