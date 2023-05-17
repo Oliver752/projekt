@@ -19,7 +19,7 @@
                     <br>
                     <br>
                     <br>
-                    <font color="a87f97">© Copright 2014 Winery.&nbsp;Free Website Template Designed by <a href="http://www.themezy.com"><font color="ffffff">Themezy</a></font>.</span>
+                    <!-- <font color="a87f97">© Copright 2014 Winery.&nbsp;Free Website Template Designed by <a href="http://www.themezy.com"><font color="ffffff">Themezy</a></font>.</span> -->
                 </div>
             </div>
         </div>

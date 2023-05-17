@@ -25,7 +25,7 @@ include_once "parts/header.php";
 		<div class="main-container">
 		<section class="map">
 				<div class="map-holder">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25198.35985697838!2d144.979258257672!3d-37.86508725777717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad6686626d1c9bf%3A0x24b207169447a3a5!2sClyde+St%2C+St+Kilda+VIC+3182!5e0!3m2!1sen!2sau!4v1405983906843"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d666.1146403431345!2d17.855177969661785!3d48.10138919381176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476b73d21a8d1acb%3A0x418f14b50030b0c8!2sTurcsek%20Pinc%C3%A9szet!5e0!3m2!1shu!2ssk!4v1683492177996!5m2!1shu!2ssk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
 			</section>
 			

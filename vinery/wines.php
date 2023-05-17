@@ -37,42 +37,42 @@ include_once "parts/header.php";
 					<div class="row">
 						<div class="col-md-2 col-sm-4">
 							<div class="team-1-member">
-								<img alt="Team Member" class="background-image" src="img/wine_1.png ">
+								<img alt="Team Member" class="background-image" src="img/wine_1.jpg ">
 								<h5>Chardonnay</h5>
 								<span>Lorem ipsum</span><br>
 								
 							</div>
 						</div><div class="col-md-2 col-sm-4">
 							<div class="team-1-member">
-								<img alt="Team Member" class="background-image" src="img/wine_2.png ">
+								<img alt="Team Member" class="background-image" src="img/wine_2.jpg ">
 								<h5>Merlot</h5>
 								<span>Dolor Sit</span><br>
 								
 							</div>
 						</div><div class="col-md-2 col-sm-4">
 							<div class="team-1-member">
-								<img alt="Team Member" class="background-image" src="img/wine_3.png ">
+								<img  alt="Team Member" class="background-image" src="img/wine_3.jpg ">
 								<h5>Pinot Noir</h5>
 								<span>Modi tempora </span><br>
 								
 							</div>
 						</div><div class="col-md-2 col-sm-4">
 							<div class="team-1-member">
-								<img alt="Team Member" class="background-image" src="img/wine_4.png ">
+								<img alt="Team Member" class="background-image" src="img/wine_4.jpg ">
 								<h5>Chenin Blanc</h5>
 								<span>Magnam aliquam</span><br>
 								
 							</div>
 						</div><div class="col-md-2 col-sm-4">
 							<div class="team-1-member">
-								<img alt="Team Member" class="background-image" src="img/wine_5.png ">
+								<img alt="Team Member" class="background-image" src="img/wine_5.jpg ">
 								<h5> Nebbiolo</h5>
 								<span>Ipsum quia</span><br>
 								
 							</div>
 						</div><div class="col-md-2 col-sm-4">
 							<div class="team-1-member">
-								<img alt="Team Member" class="background-image" src="img/wine_6.png ">
+								<img alt="Team Member" class="background-image" src="img/wine_6.jpg ">
 								<h5>Cabernet Franc</h5>
 								<span>Numquam eius</span><br>
 								

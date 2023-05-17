@@ -25,12 +25,12 @@ include_once "parts/header.php";
 		<div class="main-container">
 		<section class="product-right wood-divider">
 				<div class="background-image-holder">
-					<img class="background-image" alt="Background Image" src="img/process_image.jpg">
+					<img class="background-image" alt="Background Image" src="img/process.jpg">
 				</div>
 				
 				<div class="container align-vertical">
 					<div class="row">
-						<div class="col-md-6">
+						<div class="col-md-6" style="text-shadow: -1px -1px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;">
 							<h1 class="text-white">Adipisci velit sed quia non numquam eius modi tempora incidunt labore dolore.</h1>
 							<p class="text-white lead">
 								Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labor. Et harum quidem rerum.

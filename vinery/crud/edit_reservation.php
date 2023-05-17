@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
     $timedate = $_POST['timedate'];
 
     $sql = "UPDATE `taste_signup` SET `name`='$reservationname',`email`='$reservationemail',`count`='$persons',`date`='$timedate' WHERE id = '$id'";
-    echo "SQL Query: " . $sql;
+    //echo "SQL Query: " . $sql;
     if (isset($conn)) {
         $result = mysqli_query($conn, $sql);
     }

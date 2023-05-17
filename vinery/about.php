@@ -40,7 +40,7 @@ include_once "parts/header.php";
 			<section class="side-image clearfix">
 				<div class="image-container col-md-5 col-sm-4 pull-left">
 					<div class="background-image-holder">
-						<img class="background-image" alt="Background Image" src="img/side_1.jpg">
+						<img class="background-image" alt="Background Image" src="img/side.jpg">
 					</div>
 				</div>
 				

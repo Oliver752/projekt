@@ -8,5 +8,4 @@ if($result){
 } else {
     echo "Failed:" . mysqli_error($conn);
 }
-
 ?>
